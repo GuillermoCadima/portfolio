@@ -8,6 +8,7 @@ import { withTrailingSlash } from "./src/lib/site-url";
 
 export default defineConfig({
 	site: withTrailingSlash(siteConfig.siteUrl),
+    base: "/portfolio",
 	integrations: [sitemap(), mdx()],
 	vite: {
 		build: {
