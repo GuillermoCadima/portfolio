@@ -1,6 +1,6 @@
 ---
 title: Launching a Fictional Scholars Site
-description: A fictional note about assembling the Mira Latticewell demo profile with Astro.
+description: A fictional note about assembling the Guillermo Cadima demo profile with Astro.
 publishedAt: 2024-07-12
 featured: true
 heroImage: ../../assets/posts/fictional-scholars-site.jpg
@@ -10,7 +10,7 @@ tags:
   - web
 ---
 
-This fictional note follows Mira Latticewell while she assembles a demo academic homepage with Astro. The aim is a writing space that feels considered without making each new entry a design project. Every publication, appointment, and project described on the site is invented.
+This fictional note follows Guillermo Cadima while she assembles a demo academic homepage with Astro. The aim is a writing space that feels considered without making each new entry a design project. Every publication, appointment, and project described on the site is invented.
 
 ## Start with the reading path
 

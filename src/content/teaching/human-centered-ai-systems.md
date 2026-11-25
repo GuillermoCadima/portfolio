@@ -17,7 +17,7 @@ highlights:
   - Final demo connects synthetic evaluation with simulated stakeholder review.
 links:
   - label: Fictional course handbook
-    href: https://example.com/mira-latticewell/humane-systems-studio
+    href: https://example.com/guillermo-cadima/humane-systems-studio
 ---
 
 ## Course premise

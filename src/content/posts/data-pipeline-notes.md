@@ -9,4 +9,4 @@ tags:
   - data-cleaning
 ---
 
-This fictional workflow merges bibliography records from invented archives and simulated lab databases. The demo normalizes the single fictional author name, Mira Latticewell, and checks each entry against a small schema before rendering it.
+This fictional workflow merges bibliography records from invented archives and simulated lab databases. The demo normalizes the single fictional author name, Guillermo Cadima, and checks each entry against a small schema before rendering it.
