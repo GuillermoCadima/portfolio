@@ -36,8 +36,10 @@ jobs:
 
   verify:
       needs: build
-      - name: Verify site
-        run: pnpm verify
+      runs-on: ubuntu-latest
+      steps:
+        - name: Verify site
+          run: pnpm verify
 
       - name: Install browser engines
         run: pnpm exec playwright install --with-deps chromium firefox webkit
@@ -55,7 +57,7 @@ jobs:
           retention-days: 14
 
   deploy:
-    needs: build
+    needs: [build, verify]
     runs-on: ubuntu-latest
     environment:
       name: github-pages
