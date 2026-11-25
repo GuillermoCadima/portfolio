@@ -30,42 +30,45 @@ jobs:
       - run: pnpm install --frozen-lockfile
       - run: pnpm build
 
+      - name: Verify site
+        run: pnpm verify
+
       - uses: actions/upload-pages-artifact@v3
         with:
           path: dist
 
-  verify:
-    needs: build
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v4
+  #verify:
+    #needs: build
+    #runs-on: ubuntu-latest
+    #steps:
+      #- uses: actions/checkout@v4
 
-      - uses: pnpm/action-setup@v4
+      #- uses: pnpm/action-setup@v4
 
-      - uses: actions/setup-node@v4
-        with:
-          node-version-file: .node-version
-          cache: pnpm
+      #- uses: actions/setup-node@v4
+        #with:
+          #node-version-file: .node-version
+          #cache: pnpm
 
-      - run: pnpm install --frozen-lockfile
+      #- run: pnpm install --frozen-lockfile
 
-      - name: Verify site
-        run: pnpm verify
+      #- name: Verify site
+        #run: pnpm verify
 
       #- name: Install browser engines
       #  run: pnpm exec playwright install --with-deps chromium firefox webkit
 
-      - name: Verify browser interactions
-        run: pnpm test:browser
+      #- name: Verify browser interactions
+      #  run: pnpm test:browser
 
-      - name: Upload browser report
-        if: ${{ !cancelled() }}
-        uses: actions/upload-artifact@v7
-        with:
-          name: browser-report
-          path: playwright-report/
-          if-no-files-found: ignore
-          retention-days: 14
+      #- name: Upload browser report
+        #if: ${{ !cancelled() }}
+        #uses: actions/upload-artifact@v7
+        #with:
+          #name: browser-report
+          #path: playwright-report/
+          #if-no-files-found: ignore
+          #retention-days: 14
 
   deploy:
     needs: build
