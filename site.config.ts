@@ -9,7 +9,7 @@ import { defineSiteConfig } from "./src/config/site";
 
 export const siteConfig = defineSiteConfig({
 	// Required: the four values most sites should personalize first.
-	author: "Mira Latticewell",
+	author: "Guillermo Cadima",
 	siteUrl: "https://guillermocadima.github.io/portfolio",
 	hero: {
 		headline:
@@ -23,7 +23,7 @@ export const siteConfig = defineSiteConfig({
 
 	// Common profile and discovery settings.
 	description:
-		"An entirely fictional academic profile demonstrating the Scholar Pages Astro theme.",
+		"Testing deployment status.",
 	keywords: [
 		"synthetic learning environments",
 		"fictional archives",
